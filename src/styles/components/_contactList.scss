@@ -1,0 +1,15 @@
+@import "../general/mixins";
+
+.contactList {
+  @include vertical-list;
+
+  background-color: red;
+
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+}

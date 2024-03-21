@@ -1,0 +1,10 @@
+@import "../general/mixins";
+
+.container {
+  @include vertical-list;
+  @include card;
+  background-color: $primary;
+  img {
+    border-radius: 50%;
+  }
+}

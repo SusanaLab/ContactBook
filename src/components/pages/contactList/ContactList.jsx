@@ -4,7 +4,7 @@ import Footer from "../../layout/footer/Footer";
 
 const ContactList = ({ contacts }) => {
   return (
-    <div>
+    <div className="contactList" >
       <h2>Contact List </h2>
       <ul>
         {contacts.map((contact) => (
