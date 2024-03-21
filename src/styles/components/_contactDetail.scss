@@ -1,0 +1,13 @@
+.contact_detail{
+   
+  @include vertical-list;
+   div{
+margin: 20px;
+padding: 20px;
+background-color:$secondary; 
+   }
+   .contact_info{
+    margin:0px;
+       padding:20px;
+   }
+}

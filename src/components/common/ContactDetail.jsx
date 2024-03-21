@@ -12,17 +12,22 @@ const ContactDetail = ({ contacts }) => {
   const { street, city, state, country, postcode, timezone } = location;
 
   return (
-    <div>
-      <h1>
-        {title} {first} {last}
-      </h1>
-      <h4>
-        Location: {street.number} {street.name}, {city}, {state}, {country},{" "}
-        {postcode}
-      </h4>
+    <div className="contact_detail">
+      <div>
+        {" "}
+        <img src={picture.large} alt="Contact" />
+        <h1>
+          {title} {first} {last}
+        </h1>
+      </div>
+<div className="contact_info"> 
+  <h1>Contact Info </h1>
+  <h4>Phone: {phone}</h4>
       <h4>Email: {email}</h4>
-      <h4>Phone: {phone}</h4>
-      <img src={picture.large} alt="Contact" />
+      <h4>
+        Location: {city}, {state}, {country}
+      </h4></div>
+     
     </div>
   );
 };

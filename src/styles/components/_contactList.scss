@@ -3,12 +3,17 @@
 .contactList {
   @include vertical-list;
 
-  background-color: red;
-
+  background-color:$background;
+h2{
+    font-size: $font-xlarge;
+    font-family: $theme-font;
+}
   ul {
+      @include vertical-list;
     list-style-type: none;
   }
   a {
+   @include vertical-list;
     text-decoration: none;
     color: $dark;
   }
