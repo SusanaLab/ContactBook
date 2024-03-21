@@ -1,5 +1,6 @@
 import React from "react";
 import Contact from "../../common/Contact";
+import Footer from "../../layout/footer/Footer";
 
 const ContactList = ({ contacts }) => {
   return (
@@ -12,6 +13,7 @@ const ContactList = ({ contacts }) => {
           </li>
         ))}
       </ul>
+      <Footer/>
     </div>
   );
 };

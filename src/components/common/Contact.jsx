@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Contact = ({ contact }) => {
-  const { name, phone } = contact;
+  const { name, phone, picture} = contact;
   const { first, last } = name;
 
   return (
     <div>
       <Link to={`/contact/${contact.login.uuid}`}>
+        <img src={picture.large} alt="Contact" />
         <h1>
           {first} {last}
         </h1>

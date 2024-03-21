@@ -7,7 +7,7 @@ const App = () => {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api/?results=30")
+    fetch("https://randomuser.me/api/?results=20")
       .then((response) => {
         if (!response.ok) {
           throw new Error("");
