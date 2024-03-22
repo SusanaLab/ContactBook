@@ -5,7 +5,12 @@
   justify-content: center; 
   flex-direction: row;
 }
-
+@mixin list {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
 @mixin card {
   display: flex;
   flex-wrap: wrap;
@@ -18,4 +23,24 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 50px;
   padding: 20px;
+}
+@mixin title{
+   font-size: $font-xlarge;
+  font-family: $theme-font;
+  color: $dark;
+}
+@mixin subtitle{
+   font-size: $font-large;
+  font-family: $theme-font;
+  color: $gray;
+}
+@mixin body{
+   font-size: $font-large;
+  font-family: $theme-font;
+  color: $dark;
+}
+@mixin text{
+   font-size: $font-large;
+  font-family: $theme-font;
+  color: $gray;
 }

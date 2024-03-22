@@ -1,13 +1,43 @@
-.contact_detail{
-   
+.contact_detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $background;
   @include vertical-list;
-   div{
-margin: 20px;
-padding: 20px;
-background-color:$secondary; 
-   }
-   .contact_info{
-    margin:0px;
-       padding:20px;
-   }
+  height: 100vh;
+  img{
+    width: 40%;
+   
+  }
+  .contact_name {
+    
+   @include list;
+    margin: 0px;
+    padding: 20px;
+    background-color: $secondary;
+width: 60%;
+    height: 80vh; 
+    max-width: 800px; 
+    max-height: 600px; 
+    overflow: auto;
+  }
+
+  .contact_info {
+      @include list;
+    margin: 0px;
+    padding: 20px;
+    background-color: $white;
+    width: 60%; 
+    height: 80vh; 
+    max-width: 800px; 
+    max-height: 600px; 
+    overflow: auto; 
+  }
+  h1{
+    @include title
+  }
+  h4{
+    @include subtitle
+  }
 }
