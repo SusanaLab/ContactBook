@@ -6,6 +6,8 @@ import ContactDetail from "./components/common/ContactDetail";
 const App = () => {
   const [contacts, setContacts] = useState([]);
 
+
+
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=20")
       .then((response) => {

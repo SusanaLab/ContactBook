@@ -11,6 +11,16 @@
   justify-content: center; 
   flex-direction: column;
 }
+@mixin button {
+ background-color: $primary;
+ font-size: $font-medium;
+ color: $white;
+ border-radius: 10px;
+ width: 90px;
+ height: 40px;
+ border-width: 0px;
+ margin: 20px;
+}
 @mixin card {
   display: flex;
   flex-wrap: wrap;

@@ -1,9 +1,19 @@
 @import "../general/mixins";
 
 .contactList {
-  @include vertical-list;
-
+   display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+.filter{
+display: flex;
+flex-direction: row;
+}
   background-color:$background;
+  h3{
+    font-size: $font-medium;
+     font-family: $theme-font;
+  }
 h2{
     font-size: $font-xlarge;
     font-family: $theme-font;
@@ -16,5 +26,9 @@ h2{
    @include vertical-list;
     text-decoration: none;
     color: $dark;
+  }
+  button{
+      @include button;
+       
   }
 }
