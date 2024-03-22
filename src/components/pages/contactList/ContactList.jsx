@@ -31,7 +31,7 @@ const filteredContacts = contacts.filter((contact) => {
 
   return (
     <div className="contactList" > 
-    <h2>Contact Book </h2>   
+    <h1 className= "app ">Contact Book </h1>   
      <h3>Filter by gender</h3>
       <div className= "filter">
    

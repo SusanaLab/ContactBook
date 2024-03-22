@@ -1,34 +1,35 @@
 @import "../general/mixins";
 
 .contactList {
-   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   flex-direction: column;
-.filter{
-display: flex;
-flex-direction: row;
-}
-  background-color:$background;
-  h3{
-    font-size: $font-medium;
-     font-family: $theme-font;
+  .filter {
+    display: flex;
+    flex-direction: row;
   }
-h2{
-    font-size: $font-xlarge;
+  background-color: $background;
+  .app{
+    @include title
+  }
+  h3 {
+    font-size: $font-medium;
     font-family: $theme-font;
-}
+  }
+  h2 {
+    @include body;
+  }
   ul {
-      @include vertical-list;
+    @include vertical-list;
     list-style-type: none;
   }
   a {
-   @include vertical-list;
+    @include vertical-list;
     text-decoration: none;
     color: $dark;
   }
-  button{
-      @include button;
-       
+  button {
+    @include button;
   }
 }
