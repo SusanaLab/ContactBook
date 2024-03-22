@@ -1,22 +1,18 @@
-```markdown
-Contact Book App
 
-This is a simple Contact Book application built using React, Vite, and Sass. It utilizes the Random User Generator API to fetch random user data.
-
-Features
+**Features:**
 
 - Displays a list of contacts fetched from the Random User Generator API.
 - Allows filtering contacts by gender (male/female).
 - Clicking on a contact shows detailed information about that contact.
 - Responsive design for better usability on different devices.
 
-Technologies Used
+**Technologies Used:**
 
-- React.
-- Vite.
-- Sass.
+- React
+- Vite
+- Sass
 
- How to Run Locally
+**How to Run Locally:**
 
 1. Clone this repository to your local machine:
 
@@ -42,11 +38,7 @@ Technologies Used
    npm run dev
    ```
 
-5. Open your browser and navigate to view the app.
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Live Demo
-
-You can view a live demo [here](https://contactbookt.netlify.app/).
-
-
+--- 
 
